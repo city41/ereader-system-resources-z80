@@ -103,7 +103,7 @@ itoa__skip_hundreds:
     ld de, 10
     rst 8
     .db ERAPI_Div
-    ;; hl is now bc / 100, which will fit in a
+    ;; hl is now bc / 10, which will fit in a, assuming bc was 99 or less
 
     ld a, l
 
@@ -149,7 +149,7 @@ itoa__skip_tens:
     ;; ones digit
 
     ;; this one is simpler, just write it to the string
-    ;; at this point bc is less than 10
+    ;; at this point bc should be less than 10
     ld a, c
 
     ;; the ones digit needs to be added to the string
