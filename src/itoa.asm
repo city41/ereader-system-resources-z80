@@ -23,7 +23,7 @@
   
 ;   const tensDigit = Math.floor(n/10);
 
-;   if (tensDigit !== 0) {
+;   if (tensDigit !== 0 || hundredsDigit !== 0) {
 ;     result += String.fromCharCode(tensDigit + 48);
 ;     n -= tensDigit * 10;
 ;   }
