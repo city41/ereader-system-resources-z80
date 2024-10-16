@@ -8,6 +8,7 @@ Since I'm using a pretty bespoke dev environment, assembling this might be tough
 
 - The backgrounds section doesn't skip bad backgrounds.
 - The sprite section doesn't always skip bad sprites and I'm not sure why. It successfully avoids most bad sprites with `ERAPI_SystemSpriteIdIsValid`
+- In the sound section, pressing A does some weird things. Pressing L/R works just fine though.
 
 ## dotcode bmp won't work in mGBA
 
